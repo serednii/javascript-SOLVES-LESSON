@@ -1,10 +1,9 @@
-// Вивести координати миші відносно блока, в момент руху курсора миші в середині блока.Координати виводити під блоком.
-
-// Output the coordinates of the mouse relative to the block, at the moment of movement of the mouse cursor in the middle of the block. Display the coordinates under the block.
-
-document.querySelector('#test').onmousemove = function (event) {
-    event = event || windows.event; // Для старих браузерів 
-    // console.log(event);
-    document.querySelector('#X').innerHTML = event.offsetX;
-    document.querySelector('#Y').innerHTML = event.offsetX;
+//Добавити зображенням, на які клікнув користувач, класс border в в оформлені якого є меда і тінь
+//Add a border class to the image that the user clicked on, which is decorated with honey and a shadow
+document.onclick = function (event) {
+    event = event || window, event; //Для старих браузерів For old browsers
+    if (event.target.tagName == "IMG") {
+        console.log("dfsgs") ж
+        event.target.classList.toggle('bordered');
+    }
 }
