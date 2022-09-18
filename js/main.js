@@ -1,28 +1,23 @@
-//маємо progress bar який має заповнюватися за певний час, цей час задає програміст як параметр функції
-//We have a progress bar that must be filled in a certain time, this time is set by the programmer as a parameter of the function
+//Створити панель меню, де користувач може вибрати компоненти бургера.
+//Деякі компоненти обовязкові, деякі можна міняти. Вирахувати вартість і калорійрість бургера.
 
-function userprogress(time) {
-    time = time * 10;
-    console.log(time)
-    let start = 0;
-    const progressElement = document.getElementById('user-progress');
+const btn = document.getElementById('rezult').onclick = getResult;
 
-    setTimeout(function () {
-        let intervalID = setInterval(function () {
-            if (start < 100) {
-                progressElement.value = start;
-            } else {
-                clearInterval(intervalID);
-                userProgressCallBack();
-            }
-            start++;
-        }, time);
-    }, 2000);
+getResult();
 
-    function userProgressCallBack() {
-        //your-code
-        document.querySelector('.hidden-block').style.display = "block";
+function getResult() {
+    const menu = document.getElementsByClassName('menu');
+    let cost = 0;
+    let kkal = 0;
+    for (let i = 0; i < menu.length; i++) {
+
+        if (menu[i].checked) {
+            cost += parseFloat(menu[i].getAttribute('data-cost'));
+            kkal += +parseFloat(menu[i].getAttribute('data-kkal'));
+        }
+
+        document.getElementById('cost').innerText = cost;
+        document.getElementById('kkal').innerText = kkal;
+
     }
 }
-
-userprogress(2);

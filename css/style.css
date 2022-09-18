@@ -2,6 +2,6 @@
     box-sizing: border-box;
 }
 
-.hidden-block {
-    display: none;
+body {
+    padding: 50px;
 }
