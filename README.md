@@ -17,7 +17,7 @@ The HTML code of the modal window should be generated automatically for each pag
 ## [Task 4](https://github.com/serednii/javascript-SOLVES-LESSON/tree/task-4/ )
 Маємо progress bar який має заповнюватися за певний час, цей час задає програміст як параметр функції
 We have a progress bar that must be filled in a certain time, this time is set by the programmer as a parameter of the function
-## [Task 5](https://github.com/serednii/javascript-SOLVES-LESSON/tree/task_5/ )
+## [Task 5](https://github.com/serednii/javascript-SOLVES-LESSON/tree/task-5/ )
 Створити панель меню, де користувач може вибрати компоненти бургера.<br>
 Деякі компоненти обовязкові, деякі можна міняти. Вирахувати вартість і калорійрість бургера.<br>
 Create a menu bar where the user can select burger components.<br>
