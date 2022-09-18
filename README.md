@@ -14,6 +14,6 @@ Create a window that pops up four seconds after the page is loaded. <br>
 There should be an "Agree" button in the window. If the user selects this option, the window will not be displayed during further downloads.<br>
 If the user did not select this option, the  window is displayed upon reboot<br>
 The HTML code of the modal window should be generated automatically for each page of the site.
-## [Task 3](https://github.com/serednii/javascript-SOLVES-LESSON/tree/task-4/ )
+## [Task 4](https://github.com/serednii/javascript-SOLVES-LESSON/tree/task-4/ )
 Маємо progress bar який має заповнюватися за певний час, цей час задає програміст як параметр функції
 We have a progress bar that must be filled in a certain time, this time is set by the programmer as a parameter of the function
